@@ -5,6 +5,11 @@
         "taskDetection": "User requested code generation to create a visual graph"
     },
     {
+        "taskType": "CreatePDF",
+        "taskInstructions": "Generate only the requested code. Do not include any explanations, comments, or extra lines. The response must contain only the raw code, formatted correctly for direct saving as a file. Write a Node.js script that uses User Data and creates a PDF file with this data. If you need to generate graph USE ONLY pdfkit nodejs library. If you need to generate anything else, USE ONLY NODEJS CORE LIBRARIES. Result of generate code should be PDF file in base64 encoded string WITH BASE64 HEADER ONLY.",
+        "taskDetection": "User requested code generation to create a PDF file"
+    },
+    {
         "taskType": "default",
         "taskInstructions": "Reply that this option is not yet available and provide a link to the documentation at https://github.com/crowdgent/crowdgent_task_prompts",
         "taskDetection": "Anything else"
